@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReviewTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-04T22:29:37" hostname="epicodus-59.local" time="0.005">
+  <properties/>
+  <testcase name="Review_instantiatesCorrectly_true" classname="ReviewTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

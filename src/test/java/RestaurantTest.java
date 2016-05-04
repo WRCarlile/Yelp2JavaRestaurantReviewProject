@@ -12,8 +12,10 @@ public class RestaurantTest {
   @After
   public void tearDown() {
     try(Connection con = DB.sql2o.open()) {
+      String deleteReviewsQuery = "DELETE FROM reviews *;";
       String deleteRestaurantsQuery = "DELETE FROM restaurants *;";
       String deleteCuisinesQuery = "DELETE FROM cuisines *;";
+      con.createQuery(deleteReviewsQuery).executeUpdate();
       con.createQuery(deleteRestaurantsQuery).executeUpdate();
       con.createQuery(deleteCuisinesQuery).executeUpdate();
     }
