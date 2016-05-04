@@ -68,7 +68,7 @@ public class CuisineTest {
   }
 
   @Test
-  public void getRestaurant_retrievesAllRestaurantsFromDatabase_restaurantsList() {
+  public void getRestaurants_retrievesAllRestaurantsFromDatabase_restaurantsList() {
     Cuisine myCuisine = new Cuisine("Fast food");
     myCuisine.save();
     Restaurant firstRestaurant = new Restaurant("McDonalds", "123 First Ave", myCuisine.getId());
@@ -76,6 +76,6 @@ public class CuisineTest {
     Restaurant secondRestaurant = new Restaurant("Burger King", "456 Second Ave", myCuisine.getId());
     secondRestaurant.save();
     Restaurant[] restaurant = new Restaurant[] { firstRestaurant, secondRestaurant };
-    assertTrue(myCuisine.getRestaurant().containsAll(Arrays.asList(restaurant)));
+    assertTrue(myCuisine.getRestaurants().containsAll(Arrays.asList(restaurant)));
   }
 }

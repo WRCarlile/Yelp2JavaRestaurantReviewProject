@@ -25,7 +25,7 @@ public class Cuisine {
     }
   }
 
-  public List<Restaurant> getRestaurant() {
+  public List<Restaurant> getRestaurants() {
     try(Connection con = DB.sql2o.open()) {
       String sql = "SELECT * FROM restaurants WHERE cuisine_id=:id";
       return con.createQuery(sql)
