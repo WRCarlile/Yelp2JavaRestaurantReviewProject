@@ -1,4 +1,4 @@
-# ToDoListDataBase
+# Yelp 2
 practice in java
 
 ## Title
@@ -37,4 +37,4 @@ _To contact, leave a comment on Github._
 
 *MIT License*
 
-Copyright (c) 2016 **_Ryan Carlile_**
+Copyright (c) 2016 **_Ryan Carlile_DJ Roychoudhury**
