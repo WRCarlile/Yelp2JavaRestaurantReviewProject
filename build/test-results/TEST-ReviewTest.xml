@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReviewTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-04T22:29:37" hostname="epicodus-59.local" time="0.005">
+<testsuite name="ReviewTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-05-04T22:39:54" hostname="epicodus-59.local" time="0.102">
   <properties/>
+  <testcase name="getEntry_restaurantInstantiatesWithTitle_String" classname="ReviewTest" time="0.005"/>
+  <testcase name="delete_deletesReview_true" classname="ReviewTest" time="0.017"/>
+  <testcase name="equals_returnsTrueIfEntriesAretheSame" classname="ReviewTest" time="0.004"/>
+  <testcase name="all_emptyAtFirst" classname="ReviewTest" time="0.008"/>
+  <testcase name="update_updatesReviewEntry_true" classname="ReviewTest" time="0.019"/>
   <testcase name="Review_instantiatesCorrectly_true" classname="ReviewTest" time="0.005"/>
+  <testcase name="save_savesRestaurantIdIntoDB_true" classname="ReviewTest" time="0.017"/>
+  <testcase name="save_assignsIdToObject" classname="ReviewTest" time="0.013"/>
+  <testcase name="find_findsReviewInDatabase_true" classname="ReviewTest" time="0.013"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
