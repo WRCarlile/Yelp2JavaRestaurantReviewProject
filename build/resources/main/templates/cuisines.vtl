@@ -1,0 +1,7 @@
+<h1>All cuisines</h1>
+<ul>
+  #foreach ($cuisine in $cuisines)
+    <li><a href="/cuisines/$cuisine.getId()">$cuisine.getName()</a></li>
+  #end
+</ul>
+<a href="/cuisines/new">Add New Cuisine</a>

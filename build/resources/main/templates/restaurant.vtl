@@ -1,0 +1,15 @@
+<h1>$restaurant.getTitle()</h1>
+
+<p>Edit restaurant:</p>
+
+<form action="/cuisines/$restaurant.getCuisineId()/restaurants/$restaurant.getId()" method="post">
+  <label for="title">Title</label>
+  <input id="title" name="title" type="text">
+  <button type="submit" class="btn btn-info" id="update-restaurant">Update Restaurant</button>
+</form>
+
+<form action="/cuisines/$restaurant.getCuisineId()/restaurants/$restaurant.getId()/delete" method="post">
+  <button type="submit" class="btn btn-danger" id="delete-restaurant">Delete Restaurant</button>
+</form>
+
+<a href="/cuisines/$cuisine.getId()">Return to $cuisine.getName()</a>

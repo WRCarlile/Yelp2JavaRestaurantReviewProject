@@ -1,0 +1,40 @@
+<h1>To Do List!</h1>
+
+<p>Create a new cuisine:</p>
+
+<form action="/cuisines" method="post">
+  <label for="name">Cuisine name</label>
+  <input id="name" name="name" type="text">
+  <button id="catBtn" type="submit" class="btn btn-success">Add Cuisine</button>
+</form>
+
+
+<p> Add restaurants to any cuisine:</p>
+
+<form action="/restaurants" method="post">
+  <label for="cuisine_id">Select a List</label>
+  <select id='cuisine_id' name='cuisine_id' type='text'>
+    #foreach($cuisine in $cuisines)
+      <option value="$cuisine.getId()">$cuisine.getName()</option>
+    #end
+  </select>
+
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input id="title" name="title" type="text" class="form-control">
+  </div>
+
+  <button type="submit" class="btn btn-success">Add Restaurant</button>
+</form>
+
+
+#if($cuisines)
+  <p>Click on a cuisine to see its restaurants:</p>
+  <ul>
+    #foreach ($cuisine in $cuisines)
+      <li><a href="/cuisines/$cuisine.getId()">$cuisine.getName()</a></li>
+    #end
+  </ul>
+#else
+  <p>There are no cuisines yet!</p>
+#end
