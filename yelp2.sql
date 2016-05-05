@@ -164,7 +164,7 @@ COPY cuisines (id, name) FROM stdin;
 -- Name: cuisines_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Guest
 --
 
-SELECT pg_catalog.setval('cuisines_id_seq', 7, true);
+SELECT pg_catalog.setval('cuisines_id_seq', 19, true);
 
 
 --
@@ -179,7 +179,7 @@ COPY restaurants (id, title, address, cuisine_id) FROM stdin;
 -- Name: restaurants_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Guest
 --
 
-SELECT pg_catalog.setval('restaurants_id_seq', 6, true);
+SELECT pg_catalog.setval('restaurants_id_seq', 33, true);
 
 
 --
@@ -194,7 +194,7 @@ COPY reviews (id, entry, restaurant_id) FROM stdin;
 -- Name: reviews_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Guest
 --
 
-SELECT pg_catalog.setval('reviews_id_seq', 1, false);
+SELECT pg_catalog.setval('reviews_id_seq', 28, true);
 
 
 --

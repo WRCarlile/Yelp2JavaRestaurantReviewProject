@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RestaurantTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-05-04T22:49:28" hostname="epicodus-59.local" time="0.132">
+<testsuite name="RestaurantTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-05-05T21:39:39" hostname="epicodus-60.local" time="0.133">
   <properties/>
-  <testcase name="getReviews_retrievesAllReviewsFromDatabase_reviewsList" classname="RestaurantTest" time="0.025"/>
-  <testcase name="save_savesCuisineIdIntoDB_true" classname="RestaurantTest" time="0.019"/>
+  <testcase name="getReviews_retrievesAllReviewsFromDatabase_reviewsList" classname="RestaurantTest" time="0.026"/>
+  <testcase name="save_savesCuisineIdIntoDB_true" classname="RestaurantTest" time="0.018"/>
   <testcase name="all_emptyAtFirst" classname="RestaurantTest" time="0.008"/>
-  <testcase name="delete_deletesRestaurant_true" classname="RestaurantTest" time="0.017"/>
-  <testcase name="update_updatesRestaurantTitle_true" classname="RestaurantTest" time="0.017"/>
+  <testcase name="delete_deletesRestaurant_true" classname="RestaurantTest" time="0.016"/>
+  <testcase name="update_updatesRestaurantTitle_true" classname="RestaurantTest" time="0.018"/>
   <testcase name="equals_returnsTrueIfTitlesAretheSame" classname="RestaurantTest" time="0.005"/>
-  <testcase name="find_findsRestaurantInDatabase_true" classname="RestaurantTest" time="0.016"/>
+  <testcase name="find_findsRestaurantInDatabase_true" classname="RestaurantTest" time="0.014"/>
   <testcase name="save_assignsIdToObject" classname="RestaurantTest" time="0.013"/>
-  <testcase name="getTitle_restaurantInstantiatesWithTitle_String" classname="RestaurantTest" time="0.005"/>
+  <testcase name="getTitle_restaurantInstantiatesWithTitle_String" classname="RestaurantTest" time="0.007"/>
   <testcase name="Restaurant_instantiatesCorrectly_true" classname="RestaurantTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

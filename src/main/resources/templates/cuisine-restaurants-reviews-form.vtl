@@ -1,0 +1,12 @@
+<p>Add a review to $restaurant.getTitle()</p>
+
+<form action="/cuisines/$restaurant.getCuisineId()/restaurants/$restaurant.getId()/success" method="post">
+  <input id="restaurant_id" name="restaurant_id" type="hidden" value="$restaurant.getId()">
+
+  <div class="form-group">
+    <label for="entry">Type your review here:</label>
+    <textarea class="form-control" id="entry" name="entry" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-success">Submit Review</button>
+</form>

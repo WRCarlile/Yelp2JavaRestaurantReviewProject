@@ -131,4 +131,19 @@ public void tearDown() {
     assertEquals(0, Restaurant.all().size());
   }
 
+  @Test
+  public void reviewShowPage() {
+    Cuisine myCuisine = new Cuisine("Fast Food");
+    myCuisine.save();
+    Restaurant myRestaurant = new Restaurant("McDonalds", "555 Elm St", myCuisine.getId());
+    myRestaurant.save();
+    String cuisinePath = String.format("http://localhost:4567/cuisines/%d", myCuisine.getId());
+    goTo(cuisinePath);
+    click("a", withText("McDonalds"));
+    fill("#entry").with("McDonalds review");
+    submit("#entryBtn");
+    assertThat(pageSource()).contains("McDonalds");
+    assertThat(pageSource()).contains("McDonalds review");
+  }
+
 }

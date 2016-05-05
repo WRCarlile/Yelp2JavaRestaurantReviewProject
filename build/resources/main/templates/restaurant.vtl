@@ -1,8 +1,7 @@
 <h1>$restaurant.getTitle()</h1>
 <h2>$restaurant.getAddress()</h2>
-
+<a href="/cuisines/$restaurant.getCuisineId()/restaurants/$restaurant.getId()/new">Add Review</a>
 <p>Edit restaurant:</p>
-
 <form action="/cuisines/$restaurant.getCuisineId()/restaurants/$restaurant.getId()" method="post">
   <label for="title">Title</label>
   <input id="title" name="title" type="text">
@@ -12,5 +11,16 @@
 <form action="/cuisines/$restaurant.getCuisineId()/restaurants/$restaurant.getId()/delete" method="post">
   <button type="submit" class="btn btn-danger" id="delete-restaurant">Delete Restaurant</button>
 </form>
+
+#if($reviews)
+  <ul>
+    #foreach ($review in $restaurant.getReviews())
+      <li>$review.getEntry()</li>
+    #end
+  </ul>
+#else
+  <p>There are no reviews yet!</p>
+#end
+
 
 <a href="/cuisines/$cuisine.getId()">Return to $cuisine.getName()</a>
